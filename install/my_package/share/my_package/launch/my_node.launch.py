@@ -3,19 +3,21 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess
 from launch_ros.actions import Node
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
-    # worldファイルのパスを取得
-    world_file = os.path.join(get_package_share_directory('my_package'), 'worlds', 'my_world.world')
+    # URDFファイルへのパスを取得
+    urdf_file = os.path.join(get_package_share_directory('my_package'), 'urdf', 'my_robot.urdf')
 
-    # Gazeboを起動
-    gazebo = ExecuteProcess(
-        cmd=['gazebo', '--verbose', world_file, '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so'],
-        output='screen'
+    # Gazeboを起動（推奨される方法）
+    gazebo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
+        )
     )
 
     # URDFファイルを読み込み
-    urdf_file = os.path.join(get_package_share_directory('my_package'), 'urdf', 'my_robot.urdf')
     with open(urdf_file, 'r') as f:
         robot_description = f.read()
 
@@ -28,7 +30,7 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description}]
     )
 
-    # spawn_entityを起動
+    # spawn_entityを起動してロボットをワールドに出現させる
     spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',

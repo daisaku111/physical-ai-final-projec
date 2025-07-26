@@ -15,5 +15,9 @@
 /home/daisaku1029/ros2_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
 /home/daisaku1029/ros2_ws/install/my_package/share/my_package/package.xml
 /home/daisaku1029/ros2_ws/install/my_package/share/my_package/launch/my_node.launch.py
+/home/daisaku1029/ros2_ws/install/my_package/share/my_package/launch/display_robot.launch.py
 /home/daisaku1029/ros2_ws/install/my_package/share/my_package/urdf/my_robot.urdf
 /home/daisaku1029/ros2_ws/install/my_package/share/my_package/worlds/my_world.world
+/home/daisaku1029/ros2_ws/install/my_package/share/my_package/rviz/display.rviz
+/home/daisaku1029/ros2_ws/install/my_package/lib/my_package/mover.py
+/home/daisaku1029/ros2_ws/install/my_package/lib/my_package/simple_odom.py

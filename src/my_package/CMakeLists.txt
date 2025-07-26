@@ -48,4 +48,16 @@ install(
 install(
   DIRECTORY worlds
   DESTINATION share/${PROJECT_NAME}
+  )
+  # Install rviz config files
+install(
+  DIRECTORY rviz
+  DESTINATION share/${PROJECT_NAME}
+)
+# Install python scripts
+install(
+  PROGRAMS
+  scripts/mover.py
+  scripts/simple_odom.py
+  DESTINATION lib/${PROJECT_NAME}
 )
