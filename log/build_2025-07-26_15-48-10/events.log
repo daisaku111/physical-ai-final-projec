@@ -1,0 +1,140 @@
+[0.000000] (-) TimerEvent: {}
+[0.000261] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.000337] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.011029] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'cmake'}
+[0.012255] (my_package) Command: {'cmd': ['/usr/bin/cmake', '/home/daisaku1029/ros2_ws/src/my_package', '-DCMAKE_INSTALL_PREFIX=/home/daisaku1029/ros2_ws/install/my_package'], 'cwd': '/home/daisaku1029/ros2_ws/build/my_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'daisaku1029'), ('SHLVL', '1'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/daisaku1029'), ('OLDPWD', '/home/daisaku1029/ros2_ws/src'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'daisaku1029'), ('NAME', 'daisaku-mishima-XPS13-9310'), ('WSL_INTEROP', '/run/WSL/424_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files/Eclipse Foundation/jdk-8.0.302.8-hotspot/bin:/mnt/c/Program Files/Microsoft/jdk-11.0.16.101-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/daisa/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/daisa/AppData/Local/Programs/Python/Python313/:/mnt/c/Users/daisa/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/daisa/AppData/Local/Programs/Python/Python312/:/mnt/c/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin:/mnt/c/Users/daisa/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/daisa/.dotnet/tools:/mnt/c/Users/daisa/AppData/Roaming/Programs/Zero Install:/mnt/c/Users/daisa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/daisa/AppData/Local/Box/Box Edit/:/mnt/c/Program Files/Vim/vim91:/mnt/c/texlive/2025/bin/windows:/snap/bin'), ('WT_SESSION', '4f4b5da7-e7d6-4162-8f40-a7d9241ff13a'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/daisaku1029/ros2_ws/build/my_package'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.098004] (-) TimerEvent: {}
+[0.198698] (-) TimerEvent: {}
+[0.299393] (-) TimerEvent: {}
+[0.399923] (-) TimerEvent: {}
+[0.500742] (-) TimerEvent: {}
+[0.601255] (-) TimerEvent: {}
+[0.672992] (my_package) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.701443] (-) TimerEvent: {}
+[0.802010] (-) TimerEvent: {}
+[0.902539] (-) TimerEvent: {}
+[1.003433] (-) TimerEvent: {}
+[1.104450] (-) TimerEvent: {}
+[1.205031] (-) TimerEvent: {}
+[1.305560] (-) TimerEvent: {}
+[1.405980] (-) TimerEvent: {}
+[1.506893] (-) TimerEvent: {}
+[1.607735] (-) TimerEvent: {}
+[1.708600] (-) TimerEvent: {}
+[1.809262] (-) TimerEvent: {}
+[1.909726] (-) TimerEvent: {}
+[2.010278] (-) TimerEvent: {}
+[2.110726] (-) TimerEvent: {}
+[2.211318] (-) TimerEvent: {}
+[2.311714] (-) TimerEvent: {}
+[2.412139] (-) TimerEvent: {}
+[2.512610] (-) TimerEvent: {}
+[2.613240] (-) TimerEvent: {}
+[2.713693] (-) TimerEvent: {}
+[2.814195] (-) TimerEvent: {}
+[2.839968] (my_package) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.914421] (-) TimerEvent: {}
+[3.015021] (-) TimerEvent: {}
+[3.115476] (-) TimerEvent: {}
+[3.215915] (-) TimerEvent: {}
+[3.316755] (-) TimerEvent: {}
+[3.417351] (-) TimerEvent: {}
+[3.517771] (-) TimerEvent: {}
+[3.618183] (-) TimerEvent: {}
+[3.718609] (-) TimerEvent: {}
+[3.819093] (-) TimerEvent: {}
+[3.919585] (-) TimerEvent: {}
+[4.020059] (-) TimerEvent: {}
+[4.033387] (my_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.120413] (-) TimerEvent: {}
+[4.221215] (-) TimerEvent: {}
+[4.321841] (-) TimerEvent: {}
+[4.422638] (-) TimerEvent: {}
+[4.455323] (my_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.461648] (my_package) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.462676] (my_package) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.464041] (my_package) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.468357] (my_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.522815] (-) TimerEvent: {}
+[4.623535] (-) TimerEvent: {}
+[4.724270] (-) TimerEvent: {}
+[4.824999] (-) TimerEvent: {}
+[4.920300] (my_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.925277] (-) TimerEvent: {}
+[4.927391] (my_package) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.927734] (my_package) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.928175] (my_package) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.025555] (-) TimerEvent: {}
+[5.126274] (-) TimerEvent: {}
+[5.226708] (-) TimerEvent: {}
+[5.327256] (-) TimerEvent: {}
+[5.427748] (-) TimerEvent: {}
+[5.528213] (-) TimerEvent: {}
+[5.628619] (-) TimerEvent: {}
+[5.729048] (-) TimerEvent: {}
+[5.829509] (-) TimerEvent: {}
+[5.930039] (-) TimerEvent: {}
+[6.030477] (-) TimerEvent: {}
+[6.131007] (-) TimerEvent: {}
+[6.231470] (-) TimerEvent: {}
+[6.331896] (-) TimerEvent: {}
+[6.432310] (-) TimerEvent: {}
+[6.532925] (-) TimerEvent: {}
+[6.633495] (-) TimerEvent: {}
+[6.734075] (-) TimerEvent: {}
+[6.834604] (-) TimerEvent: {}
+[6.935103] (-) TimerEvent: {}
+[7.035704] (-) TimerEvent: {}
+[7.136277] (-) TimerEvent: {}
+[7.236966] (-) TimerEvent: {}
+[7.337534] (-) TimerEvent: {}
+[7.438204] (-) TimerEvent: {}
+[7.538857] (-) TimerEvent: {}
+[7.639618] (-) TimerEvent: {}
+[7.740318] (-) TimerEvent: {}
+[7.840926] (-) TimerEvent: {}
+[7.941466] (-) TimerEvent: {}
+[8.042085] (-) TimerEvent: {}
+[8.143055] (-) TimerEvent: {}
+[8.243519] (-) TimerEvent: {}
+[8.343977] (-) TimerEvent: {}
+[8.444442] (-) TimerEvent: {}
+[8.545284] (-) TimerEvent: {}
+[8.645961] (-) TimerEvent: {}
+[8.746654] (-) TimerEvent: {}
+[8.847255] (-) TimerEvent: {}
+[8.947793] (-) TimerEvent: {}
+[9.048312] (-) TimerEvent: {}
+[9.149082] (-) TimerEvent: {}
+[9.249578] (-) TimerEvent: {}
+[9.350088] (-) TimerEvent: {}
+[9.450508] (-) TimerEvent: {}
+[9.550931] (-) TimerEvent: {}
+[9.651387] (-) TimerEvent: {}
+[9.751866] (-) TimerEvent: {}
+[9.852296] (-) TimerEvent: {}
+[9.953463] (-) TimerEvent: {}
+[10.054124] (-) TimerEvent: {}
+[10.125707] (my_package) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[10.126092] (my_package) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[10.126151] (my_package) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[10.126198] (my_package) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[10.126246] (my_package) StderrLine: {'line': b'\n'}
+[10.126293] (my_package) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[10.126341] (my_package) StderrLine: {'line': b'  any of the following names:\n'}
+[10.126386] (my_package) StderrLine: {'line': b'\n'}
+[10.126430] (my_package) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[10.126475] (my_package) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[10.126520] (my_package) StderrLine: {'line': b'\n'}
+[10.126565] (my_package) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[10.126609] (my_package) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[10.126653] (my_package) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[10.126698] (my_package) StderrLine: {'line': b'  has been installed.\n'}
+[10.126742] (my_package) StderrLine: {'line': b'\n'}
+[10.126786] (my_package) StderrLine: {'line': b'\x1b[0m\n'}
+[10.126831] (my_package) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[10.126885] (my_package) StdoutLine: {'line': b'See also "/home/daisaku1029/ros2_ws/build/my_package/CMakeFiles/CMakeOutput.log".\n'}
+[10.130250] (my_package) CommandEnded: {'returncode': 1}
+[10.146925] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 1}
+[10.154567] (-) TimerEvent: {}
+[10.157521] (-) EventReactorShutdown: {}

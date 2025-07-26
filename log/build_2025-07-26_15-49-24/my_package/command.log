@@ -1,0 +1,6 @@
+Invoking command in '/home/daisaku1029/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/daisaku1029/ros2_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/daisaku1029/ros2_ws/install/my_package
+Invoked command in '/home/daisaku1029/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/daisaku1029/ros2_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/daisaku1029/ros2_ws/install/my_package
+Invoking command in '/home/daisaku1029/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/daisaku1029/ros2_ws/build/my_package -- -j8 -l8
+Invoked command in '/home/daisaku1029/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/daisaku1029/ros2_ws/build/my_package -- -j8 -l8
+Invoking command in '/home/daisaku1029/ros2_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/daisaku1029/ros2_ws/build/my_package
+Invoked command in '/home/daisaku1029/ros2_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/daisaku1029/ros2_ws/build/my_package

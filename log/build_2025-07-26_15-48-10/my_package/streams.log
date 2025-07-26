@@ -1,0 +1,33 @@
+[0.013s] Invoking command in '/home/daisaku1029/ros2_ws/build/my_package': /usr/bin/cmake /home/daisaku1029/ros2_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/daisaku1029/ros2_ws/install/my_package
+[0.673s] -- The C compiler identification is GNU 11.4.0
+[2.840s] -- The CXX compiler identification is GNU 11.4.0
+[4.033s] -- Detecting C compiler ABI info
+[4.455s] -- Detecting C compiler ABI info - done
+[4.461s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.462s] -- Detecting C compile features
+[4.464s] -- Detecting C compile features - done
+[4.468s] -- Detecting CXX compiler ABI info
+[4.920s] -- Detecting CXX compiler ABI info - done
+[4.927s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.927s] -- Detecting CXX compile features
+[4.928s] -- Detecting CXX compile features - done
+[10.126s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[10.126s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[10.126s]   has asked CMake to find a package configuration file provided by
+[10.126s]   "ament_cmake", but CMake did not find one.
+[10.126s] 
+[10.126s]   Could not find a package configuration file provided by "ament_cmake" with
+[10.126s]   any of the following names:
+[10.126s] 
+[10.126s]     ament_cmakeConfig.cmake
+[10.126s]     ament_cmake-config.cmake
+[10.126s] 
+[10.126s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[10.126s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[10.126s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[10.126s]   has been installed.
+[10.126s] 
+[10.126s] [0m
+[10.126s] -- Configuring incomplete, errors occurred!
+[10.127s] See also "/home/daisaku1029/ros2_ws/build/my_package/CMakeFiles/CMakeOutput.log".
+[10.131s] Invoked command in '/home/daisaku1029/ros2_ws/build/my_package' returned '1': /usr/bin/cmake /home/daisaku1029/ros2_ws/src/my_package -DCMAKE_INSTALL_PREFIX=/home/daisaku1029/ros2_ws/install/my_package
